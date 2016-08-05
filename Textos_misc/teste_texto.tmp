@@ -1,0 +1,34 @@
+Um importante dado n ̃ao medido, e consecutivamente n ̃ao evidenciado dire- hhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhohhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh
+
+
+
+tamente por nenhum dos gr ́aficos, mas observado em certa limita ̧c ̃ao do processo 
+de medida dos tempos  ́e o consumo de mem ́oria. Embora, repito, n ̃ao direta- 
+mente evidenciado em gr ́aficos o demasiado consumo de mem ́oria do modo Cheio 
+de aloca ̧c ̃ao das matrizes impossibiltou qualquer medida de tempo para matrizes 
+de ordem maior que 10000x10000. Isso porquˆe, na m ́aquina utilizada para os 
+testes, `a partir deste tamanho de matrizes o espa ̧co necess ́ario para aloc ́a-las foi 
+maior do que o dispon ́ıvel. 
+J ́a no caso da aloca ̧c ̃ao Espar ̧ca das matrizes, foi poss ́ıvel realizar a soma 
+entre matrizes com ordem de at ́e 25600x25600, sem que o limite de mem  ́oria fosse 
+alcan ̧cado. Por ́em, o tempo para a computa ̧c ̃ao de uma  ́unica soma de matrizes 
+desta ordem tornou proibitivo repetir o processo com os recursos dispon ́ıveis. 
+Conclus ̃oes 
+Este trabalho evidencia muito bem a dependencia no desempenho de um pro- 
+grama de acordo com a estrutura de dados utilizada para aloca ̧c ̃ao e opera ̧c ̃ao 
+com os mesmos. O trabalho alerta tamb ́em sobre o compromisso entre o tama- 
+nho do problema abordado e a abstra ̧c ̃ao utilizada para armazenagem e com- 
+puta ̧c ̃ao dos dados do problema. 
+Conforme vimos, a matriz alocada dinamicamente, Espar ̧ca, tem um desem- 
+penho baix ́ıssimo no que diz respeito ao tempo de computa ̧c ̃ao, por ́em possibilita 
+a abordagem de sistemas muito maiores do que as matrizes Cheias devido ao seu 
+baixo uso de mem ́oria. Talvez, no modo Espar ̧co, uma estrutura auxiliar (ve- 
+tores de ponteiros, por exemplo) poderia ser pensada para assistir as opera ̧c ̃oes 
+matriciais, no caso em particular a soma de matrizes, como que um buffer dos 
+elementos sendo manipulados. 
+Um dos motivos pelos quais as matrizes alocadas contiguamente apresentam 
+melhores tempos de computa ̧c ̃ao est ́a no fato de o processador realizar muito 
+menos acesso `a RAM por causa da leitura em blocos da mem ́oria para a cache. 
+As matrizes alocadas espar ̧camente n ̃o beneficiam-se deste mecanismo de leitura 
+na mem ́oria RAM visto que os dados s ̃ao alocados espalhados pela mem ́oria.
+programa qq coisa.
